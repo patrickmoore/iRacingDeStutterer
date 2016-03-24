@@ -1,47 +1,55 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# .gitignore file for Nexus
+#
 
-# Folder config file
-Desktop.ini
+# Ignore all dot files
+.*
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Except .gitignore
+!.gitignore
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Ignore build directories
+obj/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+x64/
 
-# Windows shortcuts
-*.lnk
+# Ignore the entire build directory
+build/
 
-# =========================
-# Operating System Files
-# =========================
+# Ignore the code analyst directory
+CodeAnalyst/
+ipch/
+.vs/
 
-# OSX
-# =========================
+# Ignore the following Visual Studio files
+*.opendb
+*.VC.db
+*.obj
+*.map
+*.pdb
+*.idb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.htm
+*.sbr
+*.sdf
+*.exp
+*.manifest
+*.res
+*.dep
+*.orig
+*.opensdf
+*.db
 
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk

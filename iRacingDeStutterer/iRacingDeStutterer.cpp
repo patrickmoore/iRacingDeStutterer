@@ -171,16 +171,11 @@ int main()
     DaqRuntime daq;
 
     std::cout << "iRacingDestutterer by Patrick Moore (patrickwmoore@gmail.com)" << std::endl;
-    std::cout << "Hold ESC to exit.\n" << std::endl;
+    std::cout << "Press Ctrl-C to exit.\n" << std::endl;
 
     bool exit = false;
     while(exit == false)
     {
-        if(::GetAsyncKeyState(VK_ESCAPE))
-        {
-            break;
-        }
-
         daq.process();
 
         Sleep(100);
